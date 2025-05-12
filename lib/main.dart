@@ -13,6 +13,7 @@ void main() {
   runApp(const MainApp());
 }
 
+
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
@@ -21,7 +22,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       scrollBehavior: const CustomScrollBehavior(),
       debugShowCheckedModeBanner: false,
-      title: 'Teste flutter- Alloy',
+      title: 'Teste flutter - Alloy',
       theme: lightTheme(),
       home: const Scaffold(
         body: TablesPage(),
