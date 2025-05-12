@@ -57,10 +57,12 @@ class Modal extends StatelessWidget {
         ),
         content: SizedBox(
           width: width,
-          child: Column(
-            mainAxisSize: contentMainAxisSize,
-            crossAxisAlignment: contentCrossAxisAlignment,
-            children: content,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: contentMainAxisSize,
+              crossAxisAlignment: contentCrossAxisAlignment,
+              children: content,
+            ),
           ),
         ),
         actionsAlignment: actionsAlignment,
